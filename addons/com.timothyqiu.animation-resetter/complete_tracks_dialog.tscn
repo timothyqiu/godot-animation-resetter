@@ -4,7 +4,6 @@
 
 [node name="CompleteTracksDialog" type="ConfirmationDialog"]
 size = Vector2i(272, 313)
-visible = true
 script = ExtResource("1_lj8eq")
 
 [node name="Tree" type="Tree" parent="."]
