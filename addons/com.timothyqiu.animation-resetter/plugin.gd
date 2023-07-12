@@ -49,6 +49,8 @@ func _handles(object: Object) -> bool:
 
 
 func _edit(object: Object) -> void:
+	if not object:
+		return
 	player = object as AnimationPlayer
 
 
