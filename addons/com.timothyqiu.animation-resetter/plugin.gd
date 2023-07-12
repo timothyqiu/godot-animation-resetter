@@ -31,6 +31,11 @@ func _enter_tree() -> void:
 	
 	popup.about_to_popup.connect(_on_about_to_popup)
 	popup.id_pressed.connect(_on_id_pressed)
+	
+	# Select the last selected AnimationPlayer
+	for node in get_editor_interface().get_selection().get_selected_nodes():
+		if node is AnimationPlayer:
+			player = node
 
 
 func _exit_tree() -> void:
