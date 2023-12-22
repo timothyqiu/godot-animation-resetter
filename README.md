@@ -9,6 +9,9 @@ This plugin adds a "Complete Tracks from RESET" option to the Animation menu in
 Animation bottom panel. The menu option adds missing animation tracks based on
 the tracks available in a RESET animation.
 
+> [!TIP]
+> This plugin is no longer necessary since Godot 4.2. Enabling the `deterministic` property of `AnimationPlayer` effectively uses RESET animation as a fallback.
+
 ## Installation
 
 This is a regular plugin for Godot. To install, download the ZIP archive,
