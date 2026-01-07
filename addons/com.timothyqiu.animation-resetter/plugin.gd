@@ -67,6 +67,11 @@ func get_animation_button() -> MenuButton:
 		
 		var hb := EditorHelper.get_first_typed_child(editor, "HBoxContainer")
 		if not hb:
+			var vb := EditorHelper.get_first_typed_child(editor, "VBoxContainer")
+			if not vb:
+				return null
+			hb = EditorHelper.get_first_typed_child(vb, "HBoxContainer")
+		if not hb:
 			return null
 		
 		var button := EditorHelper.get_first_typed_child(hb, "MenuButton")
